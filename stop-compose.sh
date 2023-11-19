@@ -1,4 +1,5 @@
 #!/bin/bash
 
 # Call with -v to remove volumes
-docker-compose down $@ 
+# https://docs.docker.com/compose/migrate
+docker-compose down $@  || docker compose down $@
